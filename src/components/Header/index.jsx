@@ -13,10 +13,6 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="/" id="navbar-brand">
             <img src={logo} alt="Dream Maids Logo" />
-            <div>
-              <h1>Dream Maids</h1>
-              <h2>Cleaning Services LLC</h2>
-            </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

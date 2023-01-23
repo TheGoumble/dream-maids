@@ -4,7 +4,7 @@ import "./footer.css"
 const Footer = () => {
   return (
   <footer>
-    <h2>This is the Footer</h2>
+    <p>&copy;2022 by Dream Maids LLC</p>
   </footer>
   )
 }

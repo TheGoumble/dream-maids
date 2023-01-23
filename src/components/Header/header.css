@@ -15,5 +15,11 @@
 }
 
 header{
-    background-color: salmon;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: top;
+    height: 15%;
+    width: 100%;
 }

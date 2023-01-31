@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 
 import "./header.css"
+import facebook from "../../images/facebook-144.png"
+import yelp from "../../images/yelp-144.png"
 import logo from "./../../images/logo.png"
 
 const Header = () => {
@@ -11,8 +13,8 @@ const Header = () => {
     <header>
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="/" id="navbar-brand">
-            <img src={logo} alt="Dream Maids Logo" />
+          <Navbar.Brand href="/">
+            <img className="img" src={logo} alt="Dream Maids Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -25,6 +27,22 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <div id="">
+        <a href="https://www.yelp.com/biz/dream-maids-cleaning-services-greenacres">
+          <img
+            className="img"
+            src={yelp}
+            alt="Link to Dream maids' yelp page"
+          />
+        </a>
+        <a href="https://www.facebook.com/dreammaidspalmbeach/">
+          <img
+            className="img"
+            src={facebook}
+            alt="Link to Dream maids' facebook page"
+          />
+        </a>
+      </div>
     </header>
   )
 }

@@ -1,4 +1,5 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 *,
 *::before,
@@ -8,11 +9,12 @@
   box-sizing: inherit;
 }
 
-html{
+html {
   margin: 0;
 }
 
-body{
+body {
+  font-family: "Lora", serif;
   background-color: lightblue;
   position: relative;
   min-height: 100vh;

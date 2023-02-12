@@ -28,14 +28,14 @@ const Header = () => {
         </Container>
       </Navbar>
       <div id="">
-        <a href="https://www.yelp.com/biz/dream-maids-cleaning-services-greenacres">
+        <a href="https://www.yelp.com/biz/dream-maids-cleaning-services-greenacres" target="_blank">
           <img
             className="img"
             src={yelp}
             alt="Link to Dream maids' yelp page"
           />
         </a>
-        <a href="https://www.facebook.com/dreammaidspalmbeach/">
+        <a href="https://www.facebook.com/dreammaidspalmbeach/" target="_blank">
           <img
             className="img"
             src={facebook}

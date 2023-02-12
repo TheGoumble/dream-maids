@@ -3,7 +3,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5.5rem;
+  height: 12.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +13,15 @@ footer {
 footer > section {
   display: flex;
   width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 #connect {
@@ -31,4 +40,25 @@ footer > section {
   display: flex;
   text-decoration: none;
   color: black;
+}
+
+#hours {
+  display: flex;
+}
+
+#bottem {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#powered {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#theg {
+  width: 50px;
 }

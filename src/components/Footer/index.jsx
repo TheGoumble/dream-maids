@@ -49,7 +49,7 @@ const Footer = () => {
       <section>
         <Container>
           <div className="row info">
-            <div className=" col-md-4 col-11">
+            <div id="location" className=" col-md-4">
               <span>
                 <b>Phone:</b>
                 <a id="links" target="_blank" href="tel:+(561) 287-0358">
@@ -60,11 +60,28 @@ const Footer = () => {
               <p>Palm Beach FL</p>
             </div>
 
-            <div id="logo" className="col-md-3 col-11">
-              <img id="img" src={logo} alt="Dream Maids Logo" />
+            <div className="col-md-3 col-11 center-footer">
+              <span className="center-footer">
+                <img id="img" src={logo} alt="Dream Maids Logo" />
+                <p>&copy;2023 by Dream Maids LLC</p>
+              </span>
+
+              <span id="powered">
+                <p>Powered by</p>
+                <a
+                  href="https://github.com/TheGoumble/dream-maids"
+                  target="_blank"
+                >
+                  <img
+                    src={theGoumble}
+                    alt="link to The github repo for the dream maids site"
+                    id="theg"
+                  />
+                </a>
+              </span>
             </div>
 
-            <div id="hours" className=" col-md-4 col-11">
+            <div id="hours" className=" col-md-4">
               <span>
                 <b>Hours:</b>
                 <p>Monday - Friday, 9:00 am - 6:00 pm</p>
@@ -73,20 +90,6 @@ const Footer = () => {
             </div>
           </div>
         </Container>
-
-        <span>
-          <p>&copy;2023 by Dream Maids LLC</p>
-          <span id="powered">
-            <p>Powered by</p>
-            <a href="https://github.com/TheGoumble/dream-maids" target="_blank">
-              <img
-                src={theGoumble}
-                alt="link to The github repo for the dream maids site"
-                id="theg"
-              />
-            </a>
-          </span>
-        </span>
       </section>
     </footer>
   )

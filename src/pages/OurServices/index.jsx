@@ -4,17 +4,17 @@ import "./ourServices.css"
 const OurServices = () => {
   return (
     <section>
-      <div>
+      <div id="our-services">
         <h1>Our Services</h1>
         <div id="options">
-          <span>
+          <span className="services">
             <h2>Residential</h2>
             <p>
               We specializes in Residential cleaning. we have been working with
               families around the metropolitan area for over 9 years.
             </p>
           </span>
-          <span>
+          <span className="services">
             <h2>Comercial</h2>
             <p>
               Keeping your commercial property neat and clean is an integral
@@ -22,7 +22,7 @@ const OurServices = () => {
               attracting and retaining customers.
             </p>
           </span>
-          <span>
+          <span className="services">
             <h2>Post-Construction</h2>
             <p>
               We offer a detailed cleaning and prepares your house for sale.

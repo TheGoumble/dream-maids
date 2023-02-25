@@ -1,3 +1,25 @@
-#about-us{
-    background-color: salmon;
+#about {
+  margin: 5rem;
+}
+
+#about-dream {
+}
+
+#about-dream > p {
+  background-color: lightgrey;
+  border-radius: 0.5rem;
+  margin-left: 20rem;
+}
+
+#magic-happens {
+}
+
+#magic-happens > h2 {
+    
+}
+
+#magic-happens > p {
+  background-color: lightgrey;
+  border-radius: 0.5rem;
+  margin-right: 20rem;
 }

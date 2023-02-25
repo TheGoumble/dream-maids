@@ -1,24 +1,28 @@
 import React from "react"
+import img_1 from "../../images/img_1.jpeg"
 import "./home.css"
+
 
 const Home = () => {
   return (
-    <section>
+    <section id="home">
       <div id="contact">
-        <h1>
-          We take pride in our efficient and accessible all-day support to
-          provide you with help for any questions and needs.
-        </h1>
+        <span>
+          <h2>
+            We take pride in our efficient and accessible all-day support to
+            provide you with help for any questions and needs.
+          </h2>
+
+        </span>
       </div>
       <div id="services">
-        <h1>
+        <h2>
           We offer Residential, Commercial, and Post-Construction cleaning
           services across all of the Palm Beach area and more!
-        </h1>
+        </h2>
       </div>
-
       <div id="aboutus">
-        <h1>Bringing peace into people’s homes for 15 years</h1>
+        <h2>Bringing peace into people’s homes for 15 years</h2>
         <p>
           A journey into one woman’s dream to begin a business now a business
           that strives to reach the homes and hearts of many.

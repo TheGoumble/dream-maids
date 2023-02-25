@@ -3,9 +3,9 @@ import "./aboutUs.css"
 
 const AboutUs = () => {
   return (
-    <section>
-      <div id="about-us">
-        <h2>About Us</h2>
+    <section id="about">
+      <div id="about-dream">
+        <h2>About Dream Maids</h2>
         <p>
           Dream Maids Cleaning Services LLC has provided high-quality cleaning
           and maintenance services customized to our clients’ needs. Our
@@ -15,7 +15,8 @@ const AboutUs = () => {
           safe and healthy environments for commercial and residential spaces.
         </p>
       </div>
-      <div>
+
+      <div id="magic-happens">
         <h2>How The Magic Happens</h2>
         <p>
           After each inquiry from potential clients, we take it upon ourselves
@@ -29,7 +30,8 @@ const AboutUs = () => {
           clients!
         </p>
       </div>
-      <div>
+
+      <div id="got-started">
         <h2>How we got started</h2>
         <p>
           Working over 10 years in the business of home care and cleaning

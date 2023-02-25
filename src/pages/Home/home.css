@@ -1,13 +1,31 @@
-#contact{
-    background-color: red;
+#home {
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#contact {
+  border-style: solid;
+  border-color: black;
+  height: 30rem;
+}
+
+
+#contact > span {
 
 }
 
-#services{
- background-color: peachpuff;
+#contact > img {
+    width: 100%;
 }
 
-#aboutus{
- background-color: salmon;
+#services {
+  border-style: solid;
+  border-color: red;
+}
 
+#aboutus {
+  border-style: solid;
+  border-color: wheat;
 }

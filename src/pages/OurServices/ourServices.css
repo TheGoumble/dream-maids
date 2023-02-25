@@ -1,5 +1,16 @@
-#options{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+#our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#options {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.services{
+ margin-left: 5rem;
+ margin-right: 5rem;
 }

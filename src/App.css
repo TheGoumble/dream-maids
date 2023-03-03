@@ -19,3 +19,9 @@ body {
   position: relative;
   min-height: 100vh;
 }
+
+#page-content{
+  padding-bottom: 15rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}

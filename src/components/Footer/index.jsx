@@ -4,6 +4,7 @@ import logo from "../../images/logo.png"
 import theGoumble from "../../images/TheGoumble.png"
 import "./footer.css"
 import "./animation.css"
+import BookNow from "../BookNow"
 
 const Footer = () => {
   return (
@@ -86,6 +87,7 @@ const Footer = () => {
                 <b>Hours:</b>
                 <p>Monday - Friday, 9:00 am - 6:00 pm</p>
                 <p>Weekends by request</p>
+                <BookNow/>
               </span>
             </div>
           </div>

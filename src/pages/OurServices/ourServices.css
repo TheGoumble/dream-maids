@@ -1,16 +1,12 @@
 #our-services {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
 }
 
-#options {
+.service {
   display: flex;
-  flex-direction: row;
-  margin-top: 3rem;
-}
-
-.services{
- margin-left: 5rem;
- margin-right: 5rem;
+  flex-direction: column;
+  align-items: center;
 }

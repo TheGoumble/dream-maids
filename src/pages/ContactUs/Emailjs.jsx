@@ -1,4 +1,6 @@
-import React, { useRef } from "react"
+import React, { useState } from "react"
+import Button from "react-bootstrap/Button"
+import Form from "react-bootstrap/Form"
 import emailjs from "@emailjs/browser"
 import {
   YOUR_TEMPLATE_ID,
@@ -7,72 +9,133 @@ import {
 } from "../../SECRETS.js"
 
 const Emailjs = () => {
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  })
 
-  const form = useRef()
-  const sendEmail = (e) => {
-    const params = {
-      name: document.getElementById("name").value,
-      phone: document.getElementById("phone").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    }
-    emailjs
-      .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, params, YOUR_PUBLIC_KEY)
-      .then((res) => {
-        document.getElementById("name").value = ""
-        document.getElementById("phone").value = ""
-        document.getElementById("email").value = ""
-        document.getElementById("message").value = ""
-        console.log(res)
-        alert("Your message sent successfully")
+  const [errors, setErrors] = useState({})
+  const setField = (field, value) => {
+    setForm({
+      ...form,
+      [field]: value,
+    })
+    if (!!errors[field])
+      setErrors({
+        ...errors,
+        [field]: null,
       })
-      .catch((err) => console.log(err))
   }
+
+  const validateForm = () => {
+    const { name, phone, email, message } = form
+    const newErrors = {}
+
+    if (!name || name === "") newErrors.name = "Please enter your name."
+    if (!phone || phone === "")
+      newErrors.phone = "Please enter your phone number."
+    if (!email || email === "")
+      newErrors.email = "Please enter your email address."
+    if (!message || message === "")
+      newErrors.message = "Please enter a message to send to us."
+
+    return newErrors
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const formErrors = validateForm()
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors)
+    } else {
+      emailjs
+        .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form, YOUR_PUBLIC_KEY)
+        .then((res) => {
+          document.getElementById("name-input").value = ""
+          document.getElementById("phone-input").value = ""
+          document.getElementById("email-input").value = ""
+          document.getElementById("message-input").value = ""
+          setForm("")
+          console.log(res)
+        })
+        .catch((err) => console.log(err))
+    }
+  }
+
   return (
     <div className="col-md-5 border-left py-3">
       <h1>Contact form</h1>
-      <div className="form-group">
-        <h5 for="name">Full Name</h5>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Enter your first name"
-          required
-        />
-      </div>
-      <div className="form-group">
-        <h5 for="phone">Phone Number</h5>
-        <input
-          type="tel"
-          class="form-control"
-          id="phone"
-          placeholder="Enter your phone number"
-          required
-        />
-      </div>
-      <div className="form-group">
-        <h5 for="email">Email Address</h5>
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="Enter email"
-          required
-        />
-      </div>
-      <div className="form-group">
-        <h5 for="message">Comment or Message</h5>
-        <textarea
-          id="message"
-          rows="3"
-          className="form-control"
-          placeholder="Enter a message or comment"
-        ></textarea>
-      </div>
-      <button className="btn btn-primary" onClick={sendEmail}>
+      <Form>
+        <Form.Group className="mb-4 col-lg-11 col-sm-11">
+          <Form.Label>Full Name</Form.Label>
+          <Form.Control
+            id="name-input"
+            type="text"
+            class="form-control"
+            placeholder="Enter your first name"
+            value={form.name}
+            onChange={(e) => setField("name", e.target.value)}
+            isInvalid={!!errors.name}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.name}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-4 col-lg-11 col-sm-11">
+          <Form.Label>Phone Number</Form.Label>
+          <Form.Control
+            id="phone-input"
+            type="tel"
+            class="form-control"
+            placeholder="Enter your phone number"
+            value={form.phone}
+            onChange={(e) => setField("phone", e.target.value)}
+            isInvalid={!!errors.phone}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.phone}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-4 col-lg-11 col-sm-11">
+          <Form.Label>Email Address</Form.Label>
+          <Form.Control
+            id="email-input"
+            type="email"
+            class="form-control"
+            placeholder="Enter email"
+            value={form.email}
+            onChange={(e) => setField("email", e.target.value)}
+            isInvalid={!!errors.email}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.email}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-3 col-lg-11 col-sm-11">
+          <Form.Label>Comment or Message</Form.Label>
+          <Form.Control
+            id="message-input"
+            as="textarea"
+            rows={3}
+            className="form-control"
+            placeholder="Enter a message or comment"
+            value={form.message}
+            onChange={(e) => setField("message", e.target.value)}
+            isInvalid={!!errors.message}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.message}
+          </Form.Control.Feedback>
+        </Form.Group>
+      </Form>
+      <Button variant="primary" onClick={handleSubmit}>
         Submit
-      </button>
+      </Button>
     </div>
   )
 }

@@ -1,25 +1,40 @@
 #about {
-  margin: 5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-text {
+  background-image: linear-gradient(to bottom right, #764bf6, #503fdf);
+  color: white;
+  border-radius: 1.5rem;
+  padding: .5rem;
+}
+
+.text {
+  background-image: linear-gradient(to bottom right, #645cf6, #5565e1);
+  color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 
 #about-dream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#about-dream > p {
-  background-color: lightgrey;
-  border-radius: 0.5rem;
-  margin-left: 20rem;
-}
+/* #about-dream > p {
 
-#magic-happens {
-}
+} */
 
-#magic-happens > h2 {
-    
+/* #magic-happens {
+} */
+
+/* #magic-happens > h2 {
 }
 
 #magic-happens > p {
-  background-color: lightgrey;
-  border-radius: 0.5rem;
-  margin-right: 20rem;
-}
+ 
+} */

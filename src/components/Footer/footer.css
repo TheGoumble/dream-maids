@@ -6,7 +6,7 @@ footer {
 }
 
 footer > section {
-  background-color: white;
+  background-color: #9CCECB;
   display: flex;
   justify-content: space-between;
   align-items: center;

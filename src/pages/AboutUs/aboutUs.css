@@ -5,16 +5,9 @@
   align-items: center;
 }
 
-.sub-text {
-  background-image: linear-gradient(to bottom right, #764bf6, #503fdf);
-  color: white;
-  border-radius: 1.5rem;
-  padding: .5rem;
-}
-
 .text {
-  background-image: linear-gradient(to bottom right, #645cf6, #5565e1);
-  color: white;
+  background-color: #6ABDCD;
+  color: black;
   border-radius: 1.5rem;
   padding: 2rem;
 }

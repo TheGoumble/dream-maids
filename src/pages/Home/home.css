@@ -7,36 +7,57 @@
 }
 
 .outer {
-  border-style: solid;
-  border-color: #5565e1;
   width: 100%;
-  border-width: 0.5rem;
-  border-radius: 2rem;
-
+  z-index: 0;
 }
 
 .service-cards {
-  background-color: #5565e1;
+  background-color: #4496af;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 2rem;
+  height: 14rem;
 }
 
 #contact {
-  height: 20rem;
-  background-image: url("../../images/img_1.jpeg");
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
 }
 
 #contact > img {
-  z-index: 0;
-  width: 500px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  width: 100%;
   border-radius: 2rem;
 }
 
 #contact > span {
-  z-index: 1;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact > span > span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact > h1 {
+  background-color: #c74821;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
 #services {

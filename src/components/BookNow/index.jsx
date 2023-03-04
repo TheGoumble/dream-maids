@@ -68,7 +68,7 @@ const BookNow = () => {
 
   return (
     <>
-      <Button variant="secondary" onClick={handleShow}>
+      <Button variant="info"  onClick={handleShow}>
         Book Now
       </Button>
 

@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header>
       <Navbar expand="lg">
-        <Container>
+        <Container className="justify-content-start">
           <Navbar.Brand href="/">
             <img className="img" src={logo} alt="Dream Maids Logo" />
           </Navbar.Brand>
@@ -24,7 +24,7 @@ const Header = () => {
               <Nav.Link href="our-services">Our Services</Nav.Link>
               <Nav.Link href="about-us">About Us</Nav.Link>
               <Nav.Link href="contact-us">Contact Us</Nav.Link>
-              <Nav.Link href="tel:+(561) 287-0358"><img id="call" src={call} alt="call now" />Call Now</Nav.Link>
+              <Nav.Link href="tel:+(561) 287-0358"><img id="call" src={call} alt="call now" /> Call Now</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -15,16 +15,17 @@ import "./home.css"
 const Home = () => {
   return (
     <section id="home">
-      <h1>Dream Maids </h1>
       <div className="outer" id="contact">
+        <img src={img_1} alt="people cleaning a room" />
+        <h1>Dream Maids </h1>
         <span>
           <h2>
             We take pride in our efficient and accessible all-day support to
             provide you with help for any questions and needs.
           </h2>
-          <span id="">
+          <span>
             <BookNow />
-            or
+            <p className="h4">or</p>
             <Button href="tel:+(561) 287-0358" variant="secondary">
               Call Us
             </Button>

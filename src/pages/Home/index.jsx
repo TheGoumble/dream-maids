@@ -13,62 +13,67 @@ import "./home.css"
 
 const Home = () => {
   return (
-    <section id="home">
-      <div className="outer" id="contact">
-        <img src={img_1} alt="people cleaning a room" />
-        <h1>Dream Maids </h1>
-        <span>
-          <h2>
-            We take pride in our efficient and accessible all-day support to
-            provide you with help for any questions and needs.
-          </h2>
+    <section className="container" >
+      <Row className="outer" id="home">
+        <Col id="contact">
+          <img
+            src={img_1}
+            alt="people cleaning a room"
+            id="contact_img"
+          />
+          <h1>Dream Maids </h1>
           <span>
-            <BookNow />
-            <p className="h4">or</p>
-            <Button href="tel:+(561) 287-0358" variant="secondary">
-              Call Us
-            </Button>
+            <h2>
+              We take pride in our efficient and accessible all-day support to
+              provide you with help for any questions and needs.
+            </h2>
+            <span>
+              <BookNow />
+              <p className="h4">or</p>
+              <Button href="tel:+(561) 287-0358" variant="secondary">
+                Call Us
+              </Button>
+            </span>
           </span>
-        </span>
-      </div>
+        </Col>
 
-      <div id="services" className="outer">
-        <h2>Our Services</h2>
-        <Row>
-          <Col className="service-cards" lg>
-            <h3>Residential</h3>
-            <img src={service_1} alt="the residential service" />
-            <Button href="our-services">Learn More</Button>
-          </Col>
+        <Col id="services" className="outer">
+          <h2>Our Services</h2>
+          <Row>
+            <Col className="service-cards" lg>
+              <h3>Residential</h3>
+              <img src={service_1} alt="the residential service" />
+              <Button href="our-services">Learn More</Button>
+            </Col>
 
-          <Col className="service-cards" lg>
-            <h3>Comercial</h3>
-            <img src={service_2} alt="the Comercial service" />
-            <Button href="our-services">Learn More</Button>
-          </Col>
+            <Col className="service-cards" lg>
+              <h3>Comercial</h3>
+              <img src={service_2} alt="the Comercial service" />
+              <Button href="our-services">Learn More</Button>
+            </Col>
 
-          <Col className="service-cards" lg>
-            <h3>Post-Construction</h3>
-            <img src={service_3} alt="the Post-Construction service" />
-            <Button href="our-services">Learn More</Button>
-          </Col>
-        </Row>
-      </div>
-
-      <div className="outer" id="aboutus">
-        <span>
-          <h2>Bringing peace into people’s homes for 15 years</h2>
+            <Col className="service-cards" lg>
+              <h3>Post-Construction</h3>
+              <img src={service_3} alt="the Post-Construction service" />
+              <Button href="our-services">Learn More</Button>
+            </Col>
+          </Row>
+        </Col>
+        <Col className="outer" id="aboutus">
           <span>
-            <p>
-              A journey into one woman’s dream to begin a business now a
-              business that strives to reach the homes and hearts of many.
-            </p>
-            <Button href="about-us" variant="secondary">
-              About Us
-            </Button>
+            <h2>Bringing peace into people’s homes for 15 years</h2>
+            <span>
+              <p>
+                A journey into one woman’s dream to begin a business now a
+                business that strives to reach the homes and hearts of many.
+              </p>
+              <Button href="about-us" variant="secondary">
+                About Us
+              </Button>
+            </span>
           </span>
-        </span>
-      </div>
+        </Col>
+      </Row>
     </section>
   )
 }

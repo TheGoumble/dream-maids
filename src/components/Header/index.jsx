@@ -42,11 +42,9 @@ const Header = () => {
                 </Nav.Link>
               </Nav>
             </Offcanvas.Body>
-
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-
       <div>
         <a
           href="https://www.yelp.com/biz/dream-maids-cleaning-services-greenacres"

@@ -1,5 +1,4 @@
 import React from "react"
-import Container from "react-bootstrap/Container"
 import logo from "../../images/logo.png"
 import theGoumble from "../../images/TheGoumble.png"
 import "./footer.css"
@@ -47,51 +46,53 @@ const Footer = () => {
           </g>
         </svg>
       </div>
+
       <section>
-        <Container>
+        <div className="container">
           <div className="row info">
-            <div id="location" className=" col-md-4">
+            <div id="location" className="col-lg">
               <span>
-                <b>Phone:</b>
+                <b className="text-color">Phone:</b>
                 <a id="links" target="_blank" href="tel:+(561) 287-0358">
                   (561) 287-0358
                 </a>
               </span>
-              <b>Location:</b>
+              <b className="text-color">Location:</b>
               <p>Palm Beach FL</p>
             </div>
 
-            <div className="col-md-3 col-11 center-footer">
-              <span className="center-footer">
+            <div id="center-footer" className="col-lg">
+              <span>
                 <img id="img" src={logo} alt="Dream Maids Logo" />
-                <p>&copy;2023 by Dream Maids LLC</p>
-              </span>
-
-              <span id="powered">
-                <p>Powered by</p>
-                <a
-                  href="https://github.com/TheGoumble/dream-maids"
-                  target="_blank"
-                >
-                  <img
-                    src={theGoumble}
-                    alt="link to The github repo for the dream maids site"
-                    id="theg"
-                  />
-                </a>
+                <BookNow />
               </span>
             </div>
 
-            <div id="hours" className=" col-md-4">
+            <div id="hours" className=" col-lg">
               <span>
-                <b>Hours:</b>
+                <b className="text-color">Hours:</b>
                 <p>Monday - Friday, 9:00 am - 6:00 pm</p>
                 <p>Weekends by request</p>
-                <BookNow/>
               </span>
             </div>
           </div>
-        </Container>
+          <div id="bottem">
+            <p>&copy;2023 by Dream Maids LLC</p>
+            <span>
+              <p>Powered by</p>
+              <a
+                href="https://github.com/TheGoumble/dream-maids"
+                target="_blank"
+              >
+                <img
+                  src={theGoumble}
+                  alt="link to The github repo for the dream maids site"
+                  id="theg"
+                />
+              </a>
+            </span>
+          </div>
+        </div>
       </section>
     </footer>
   )

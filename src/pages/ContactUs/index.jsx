@@ -1,19 +1,20 @@
 import React from "react"
 import Emailjs from "./Emailjs"
+import "./contactUs.css"
 
 const ContactUs = () => {
   return (
     <section>
-      <div className="container border mt-3 bg-light">
-        <div className="row">
-          <div className="col-md-5 p-5 bg-primary text-white">
+      <div className="container">
+        <div className="row contact">
+          <div className="col-lg-5 col-sm-10 p-5">
             <h1>Hi there!</h1>
-            <h4>
+            <p >
               Please allow up to 24 hours for an adequate and concise response
               to each inquiry given.
-            </h4>
+            </p >
             <br />
-            <h4>Thank you for choosing us for your home cleaning service! </h4>
+            <p >Thank you for choosing us for your home cleaning service! </p >
           </div>
           <Emailjs />
         </div>

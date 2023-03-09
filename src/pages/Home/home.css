@@ -22,7 +22,7 @@
 }
 
 #contact {
-  padding-top: 4rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -31,19 +31,21 @@
 
 #contact > img {
   z-index: 1;
-  position: relative;
   text-align: center;
-  width: 100%;
   border-radius: 2rem;
 }
 
 #contact > span {
   z-index: 2;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #6abdcd;
+  padding: 2rem;
+  border-radius: 2rem;
 }
+
 #contact > span > span {
   display: flex;
   justify-content: space-evenly;
@@ -51,7 +53,7 @@
 }
 
 #contact > h1 {
-  background-color: #c74821;
+  background-color: #9ccecb;
   z-index: 2;
   position: absolute;
   left: 50%;
@@ -73,4 +75,14 @@
 }
 
 #aboutus {
+  background-color:#D1662E;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+#aboutus > span {
+  padding: 4rem;
 }

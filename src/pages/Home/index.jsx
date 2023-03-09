@@ -1,5 +1,4 @@
 import React from "react"
-import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
@@ -56,16 +55,18 @@ const Home = () => {
         </Row>
       </div>
 
-      <div className="outer">
-        <span id="aboutus">
+      <div className="outer" id="aboutus">
+        <span>
           <h2>Bringing peace into people’s homes for 15 years</h2>
-          <p>
-            A journey into one woman’s dream to begin a business now a business
-            that strives to reach the homes and hearts of many.
-          </p>
-          <Button href="about-us" variant="secondary">
-            About Us
-          </Button>
+          <span>
+            <p>
+              A journey into one woman’s dream to begin a business now a
+              business that strives to reach the homes and hearts of many.
+            </p>
+            <Button href="about-us" variant="secondary">
+              About Us
+            </Button>
+          </span>
         </span>
       </div>
     </section>

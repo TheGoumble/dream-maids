@@ -10,6 +10,8 @@ import {
 } from "../../SECRETS.js"
 import call from "../../images/call.png"
 
+
+
 const BookNow = () => {
   const [show, setShow] = useState(false)
 
@@ -68,8 +70,8 @@ const BookNow = () => {
 
   return (
     <>
-      <Button variant="info"  onClick={handleShow}>
-        Book Now
+      <Button className="btn-color" onClick={handleShow}>
+        <b>Book Now</b>
       </Button>
 
       <Modal size="lg" show={show} onHide={handleClose}>
@@ -146,7 +148,7 @@ const BookNow = () => {
         </Modal.Body>
         <Modal.Footer>
           <a href="tel:+(561) 287-0358">
-            <img style={{width: "40px"}} src={call} alt="call now" />
+            <img style={{ width: "40px" }} src={call} alt="call now" />
           </a>
           <Button variant="secondary" onClick={handleClose}>
             Close

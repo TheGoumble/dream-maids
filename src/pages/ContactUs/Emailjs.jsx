@@ -65,7 +65,7 @@ const Emailjs = () => {
   }
 
   return (
-    <div className="col-md-5 border-left py-3">
+    <div className="col-md-5 col-sm-11 border-left py-3">
       <h1>Contact form</h1>
       <Form>
         <Form.Group className="mb-4 col-lg-11 col-sm-11">

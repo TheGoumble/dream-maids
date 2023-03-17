@@ -9,10 +9,11 @@ const Footer = () => {
   return (
     <footer>
       <Animations />
+
       <section>
         <div className="container">
           <div className="row info">
-            <div id="location" className="col-lg">
+            <div  className="col-lg">
               <span>
                 <b className="text-color">Phone:</b>
                 <a id="links" target="_blank" href="tel:+(561) 287-0358">
@@ -22,24 +23,26 @@ const Footer = () => {
               <b className="text-color">Location:</b>
               <p>Palm Beach FL</p>
             </div>
-
-            <div id="center-footer" className="col-lg">
-              <span>
-                <img id="img" src={logo} alt="Dream Maids Logo" />
-                <BookNow />
-              </span>
-            </div>
-
-            <div id="hours" className=" col-lg">
+            <div className=" col-lg ">
               <span>
                 <b className="text-color">Hours:</b>
                 <p>Monday - Friday, 9:00 am - 6:00 pm</p>
                 <p>Weekends by request</p>
               </span>
             </div>
+            
+            <div  className="col-lg">
+              <span>
+                <img id="img" src={logo} alt="Dream Maids Logo" />
+                <BookNow />
+              </span>
+            </div>
           </div>
           <div id="bottem">
-            <p>&copy;2023 by Dream Maids LLC</p>
+            <p>
+              &copy;{new Date().getFullYear()} by Dream Maids LLC - All Rights
+              Reserved
+            </p>
             <span>
               <p>Powered by</p>
               <a

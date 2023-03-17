@@ -3,11 +3,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .outer {
-  width: 100%;
   z-index: 0;
 }
 
@@ -33,7 +32,6 @@
   z-index: 1;
   text-align: center;
   border-radius: 2rem;
-  width: 100%;
 }
 
 #contact > span {
@@ -70,13 +68,11 @@
 }
 
 #services > div {
-  margin: 2rem;
-  width: 90%;
   gap: 3rem;
 }
 
 #aboutus {
-  background-color:#D1662E;
+  background-color: #d1662e;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;

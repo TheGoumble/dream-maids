@@ -71,7 +71,7 @@ const BookNow = () => {
   return (
     <>
       <Button className="btn-color" onClick={handleShow}>
-        <b>Book Now</b>
+        Book Now
       </Button>
 
       <Modal size="lg" show={show} onHide={handleClose}>

@@ -23,10 +23,10 @@ const Home = () => {
           />
           <h1>Dream Maids </h1>
           <span>
-            <h2>
+            <h3>
               We take pride in our efficient and accessible all-day support to
               provide you with help for any questions and needs.
-            </h2>
+            </h3>
             <span>
               <BookNow />
               <p className="h4">or</p>

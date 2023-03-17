@@ -9,20 +9,15 @@
   box-sizing: inherit;
 }
 
-html {
+body {
   scroll-behavior: smooth;
   margin: 0;
-}
-
-body {
   font-family: "Lora", serif;
-  background-color: #FDF8D7;
+  background-color: #fdf8d7;
   position: relative;
   min-height: 100vh;
 }
 
-#page-content{
+#page-content {
   padding-bottom: 15rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
 }

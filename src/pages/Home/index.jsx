@@ -1,26 +1,22 @@
 import React from "react"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import { Row, Col, Container, Button } from "react-bootstrap"
 
-import Button from "react-bootstrap/Button"
 import BookNow from "../../components/BookNow"
 import service_1 from "../../images/residential.png"
 import service_2 from "../../images/comercial.png"
 import service_3 from "../../images/post-construction.png"
 
 import img_1 from "../../images/img_1.jpeg"
+
 import "./home.css"
+import MobileCaro from "./MobileCaro.jsx"
 
 const Home = () => {
   return (
-    <section className="container" >
+    <Container>
       <Row className="outer" id="home">
         <Col id="contact">
-          <img
-            src={img_1}
-            alt="people cleaning a room"
-            id="contact_img"
-          />
+          <img src={img_1} alt="people cleaning a room" id="contact_img" />
           <h1>Dream Maids </h1>
           <span>
             <h3>
@@ -39,20 +35,23 @@ const Home = () => {
 
         <Col id="services" className="outer">
           <h2>Our Services</h2>
-          <Row>
-            <Col className="service-cards" lg>
+
+          <MobileCaro />
+
+          <Row id="rowed">
+            <Col className="service-cards" lg md>
               <h3>Residential</h3>
               <img src={service_1} alt="the residential service" />
               <Button href="our-services">Learn More</Button>
             </Col>
 
-            <Col className="service-cards" lg>
+            <Col className="service-cards" lg md>
               <h3>Comercial</h3>
               <img src={service_2} alt="the Comercial service" />
               <Button href="our-services">Learn More</Button>
             </Col>
 
-            <Col className="service-cards" lg>
+            <Col className="service-cards" lg md>
               <h3>Post-Construction</h3>
               <img src={service_3} alt="the Post-Construction service" />
               <Button href="our-services">Learn More</Button>
@@ -74,7 +73,7 @@ const Home = () => {
           </span>
         </Col>
       </Row>
-    </section>
+    </Container>
   )
 }
 

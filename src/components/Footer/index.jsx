@@ -13,7 +13,18 @@ const Footer = () => {
       <section>
         <div className="container">
           <div className="row info">
-            <div  className="col-lg">
+            <div className="col-lg">
+              <span>
+                <img id="img" src={logo} alt="Dream Maids Logo" />
+                <p>
+                  providing customized high-quality cleaning and maintenance
+                  services to meet clients' needs.
+                </p>
+
+                <BookNow />
+              </span>
+            </div>
+            <div className="col-lg">
               <span>
                 <b className="text-color">Phone:</b>
                 <a id="links" target="_blank" href="tel:+(561) 287-0358">
@@ -30,20 +41,13 @@ const Footer = () => {
                 <p>Weekends by request</p>
               </span>
             </div>
-            
-            <div  className="col-lg">
-              <span>
-                <img id="img" src={logo} alt="Dream Maids Logo" />
-                <BookNow />
-              </span>
+            <div id="bottem">
+              <p>
+                &copy;{new Date().getFullYear()} by Dream Maids LLC - All Rights
+                Reserved
+              </p>
             </div>
-          </div>
-          <div id="bottem">
-            <p>
-              &copy;{new Date().getFullYear()} by Dream Maids LLC - All Rights
-              Reserved
-            </p>
-            <span>
+            <div id="powered">
               <p>Powered by</p>
               <a
                 href="https://github.com/TheGoumble/dream-maids"
@@ -55,7 +59,7 @@ const Footer = () => {
                   id="theg"
                 />
               </a>
-            </span>
+            </div>
           </div>
         </div>
       </section>

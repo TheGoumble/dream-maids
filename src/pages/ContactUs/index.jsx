@@ -1,13 +1,15 @@
 import React from "react"
+import { Row, Col, Container } from "react-bootstrap"
+
 import Emailjs from "./Emailjs"
 import "./contactUs.css"
 
 const ContactUs = () => {
   return (
     <section>
-      <div className="container">
-        <div className="row contact">
-          <div className="col-lg-5 col-sm-12 p-5">
+      <Container>
+        <Row className="contact">
+          <Col md={5} sm={12} p-5>
             <h1>Hi there!</h1>
             <p>
               Please allow up to 24 hours for an adequate and concise response
@@ -15,10 +17,13 @@ const ContactUs = () => {
             </p>
             <br />
             <p>Thank you for choosing us for your home cleaning service! </p>
-          </div>
-          <Emailjs />
-        </div>
-      </div>
+          </Col>
+          <Col md={6} sm={12} p-5>
+            <h1>Contact form</h1>
+            <Emailjs />
+          </Col>
+        </Row>
+      </Container>
     </section>
   )
 }

@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import Button from "react-bootstrap/Button"
-import Form from "react-bootstrap/Form"
+import { Button, Form, Col } from "react-bootstrap"
 import emailjs from "@emailjs/browser"
 import {
   YOUR_TEMPLATE_ID,
@@ -65,10 +64,9 @@ const Emailjs = () => {
   }
 
   return (
-    <div className=" col-lg-5 col-md-12 col-sm-11 border-left py-3">
-      <h1>Contact form</h1>
+    <>
       <Form>
-        <Form.Group className="mb-4 col-lg-11 col-sm-11">
+        <Form.Group>
           <Form.Label>Full Name</Form.Label>
           <Form.Control
             id="name-input"
@@ -84,7 +82,7 @@ const Emailjs = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group className="mb-4 col-lg-11 col-sm-11">
+        <Form.Group>
           <Form.Label>Phone Number</Form.Label>
           <Form.Control
             id="phone-input"
@@ -100,7 +98,7 @@ const Emailjs = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group className="mb-4 col-lg-11 col-sm-11">
+        <Form.Group>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
             id="email-input"
@@ -116,7 +114,7 @@ const Emailjs = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group className="mb-3 col-lg-11 col-sm-11">
+        <Form.Group>
           <Form.Label>Comment or Message</Form.Label>
           <Form.Control
             id="message-input"
@@ -136,7 +134,7 @@ const Emailjs = () => {
       <Button variant="primary" onClick={handleSubmit}>
         Submit
       </Button>
-    </div>
+    </>
   )
 }
 

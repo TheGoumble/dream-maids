@@ -15,9 +15,15 @@ body {
   font-family: "Lora", serif;
   background-color: #fdf8d7;
   position: relative;
-  min-height: 100vh;
 }
 
 #page-content {
-  padding-bottom: 15rem;
+  padding-bottom: 24%;
+}
+
+
+@media (max-width: 768px) {
+  #page-content {
+    padding-bottom: 2rem;
+  }
 }

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@gaearon/react-collapsed": "^3.3.0-patched-react-18",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "react": "^18.2.0",

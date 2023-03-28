@@ -10,58 +10,69 @@ import img_1 from "../../images/img_1.jpeg"
 
 import "./home.css"
 import MobileCaro from "./MobileCaro.jsx"
+import Card from "./Card.jsx"
 
 const Home = () => {
+  const data = [
+    {
+      img: service_1,
+      heading: "Residential",
+      content:
+        "We specializes in Residential cleaning. we have been working with families around the metropolitan area for over 9 years.",
+    },
+    {
+      img: service_2,
+      heading: "Comercial",
+      content:
+        "Keeping your commercial property neat and clean is an integral part of maintaining your facility, improving productivity, and attracting and retaining customers.",
+    },
+    {
+      img: service_3,
+      heading: "Post-Construction",
+      content:
+        "We provide thorough cleaning for house sales by a professional team supervised by a manager. Additionally, we offer periodic maintenance or touch-up cleaning based on your requirements.",
+    },
+  ]
+
   return (
     <Container>
       <Row className="outer" id="home">
+
+
         <Col id="contact">
           <img src={img_1} alt="people cleaning a room" id="contact_img" />
-          <h1>Dream Maids </h1>
-          <span>
+          <h2>Weclome to Dream Maids</h2>
+          <div>
             <h3>
               We take pride in our efficient and accessible all-day support to
               provide you with help for any questions and needs.
             </h3>
-            <span>
+            <div>
               <BookNow />
               <p className="h4">or</p>
               <Button href="tel:+(561) 287-0358" variant="secondary">
                 Call Us
               </Button>
-            </span>
-          </span>
+            </div>
+          </div>
         </Col>
+
 
         <Col id="services" className="outer">
           <h2>Our Services</h2>
-
-          <MobileCaro />
-
+          <MobileCaro data={data}/>
           <Row id="rowed">
-            <Col className="service-cards" lg md>
-              <h3>Residential</h3>
-              <img src={service_1} alt="the residential service" />
-              <Button href="our-services">Learn More</Button>
-            </Col>
-
-            <Col className="service-cards" lg md>
-              <h3>Comercial</h3>
-              <img src={service_2} alt="the Comercial service" />
-              <Button href="our-services">Learn More</Button>
-            </Col>
-
-            <Col className="service-cards" lg md>
-              <h3>Post-Construction</h3>
-              <img src={service_3} alt="the Post-Construction service" />
-              <Button href="our-services">Learn More</Button>
-            </Col>
+            {data.map((item, index) => {
+              return <Card key={index} item={item}/>
+            })}
           </Row>
         </Col>
+
+
         <Col className="outer" id="aboutus">
-          <span>
+          <div>
             <h2>Bringing peace into people’s homes for 15 years</h2>
-            <span>
+            <div>
               <p>
                 A journey into one woman’s dream to begin a business now a
                 business that strives to reach the homes and hearts of many.
@@ -69,9 +80,11 @@ const Home = () => {
               <Button href="about-us" variant="secondary">
                 About Us
               </Button>
-            </span>
-          </span>
+            </div>
+          </div>
         </Col>
+
+
       </Row>
     </Container>
   )

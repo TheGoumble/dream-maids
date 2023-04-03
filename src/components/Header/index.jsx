@@ -24,7 +24,7 @@ const Header = () => {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="about-us">About Us</Nav.Link>
               <Nav.Link href="contact-us">Contact Us</Nav.Link>
-              <Nav.Link href="tel:+(561) 287-0358">
+              <Nav.Link href="tel:+1 (561) 287-0358">
                 <img id="call" src={call} alt="call now" />
                 Call Now
               </Nav.Link>

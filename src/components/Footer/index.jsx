@@ -10,10 +10,12 @@ const Footer = () => {
     <footer>
       <Animations />
       <section>
-        <div className="container">
+        <div className="container ">
           <div className="row">
             {/* Column1 */}
-            <div className="col">
+
+            {/* fix footer alignment */}
+            <div className="col-md d-flex flex-column align-items-md-start align-items-sm-center">
               {/* <img id="img" src={logo} alt="Dream Maids Logo" /> */}
               <h4>Dream Maids</h4>
               <ul className="list-unstyled">
@@ -23,12 +25,12 @@ const Footer = () => {
               </ul>
             </div>
             {/* Column2 */}
-            <div className="col">
+            <div className="col-sm d-flex flex-column align-items-xs-center">
               <h5>Phone:</h5>
               <ui className="list-unstyled">
                 <li>
                   {" "}
-                  <a id="links" target="_blank" href="tel:+(561) 287-0358">
+                  <a id="links" target="_blank" href="tel:+1 (561) 287-0358">
                     (561) 287-0358
                   </a>
                 </li>
@@ -39,7 +41,7 @@ const Footer = () => {
               </ui>
             </div>
             {/* Column3 */}
-            <div className="col">
+            <div className="col-sm">
               <h4>Hours:</h4>
               <ui className="list-unstyled">
                 <li>Monday - Friday,</li>

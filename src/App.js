@@ -13,7 +13,7 @@ import "./App.css"
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="parent-container">
         <Header />
         <Routes>
           <Route index element={<Home />} />

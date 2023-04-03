@@ -147,7 +147,7 @@ const BookNow = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <a href="tel:+(561) 287-0358">
+          <a href="tel:+1 (561) 287-0358">
             <img style={{ width: "40px" }} src={call} alt="call now" />
           </a>
           <Button variant="secondary" onClick={handleClose}>

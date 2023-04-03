@@ -9,7 +9,6 @@ import service_3 from "../../images/post-construction.png"
 import img_1 from "../../images/img_1.jpeg"
 
 import "./home.css"
-import MobileCaro from "./MobileCaro.jsx"
 import Card from "./Card.jsx"
 
 const Home = () => {
@@ -37,8 +36,6 @@ const Home = () => {
   return (
     <Container>
       <Row className="outer" id="home">
-
-
         <Col id="contact">
           <img src={img_1} alt="people cleaning a room" id="contact_img" />
           <h2>Weclome to Dream Maids</h2>
@@ -60,7 +57,6 @@ const Home = () => {
 
         <Col id="services" className="outer">
           <h2>Our Services</h2>
-          <MobileCaro data={data}/>
           <Row id="rowed">
             {data.map((item, index) => {
               return <Card key={index} item={item}/>

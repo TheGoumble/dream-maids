@@ -6,22 +6,25 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+}
+
+.parent-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+* {
+  font-family: "Lora", serif;
 }
 
 body {
-  scroll-behavior: smooth;
-  margin: 0;
-  font-family: "Lora", serif;
   background-color: #fdf8d7;
-  position: relative;
-  height: 100vh;
-  min-height: 844px;
 }
 
-body > div {
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+p {
+  font-size: clamp(1.1rem, 1vw, 1.3rem);
+  line-height: 1.4em;
 }
+
+

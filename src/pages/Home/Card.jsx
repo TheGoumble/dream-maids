@@ -19,7 +19,7 @@ const Card = ({ item }) => {
       <h3>{item.heading}</h3>
       <img src={item.img} />
 
-      <Accordion defaultActiveKey="1">
+      <Accordion defaultActiveKey="0">
     
       <CustomToggle eventKey="1">Learn More</CustomToggle>
         <Accordion.Collapse eventKey="1">

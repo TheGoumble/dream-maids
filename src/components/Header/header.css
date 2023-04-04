@@ -1,6 +1,19 @@
 header {
- background-color: #4496AF;
+  position: relative;
 }
+
+#sun{
+  position: absolute;
+  z-index: -1;
+  background: #F2AF46;
+  width: 16.5rem;
+  height: 16.5rem;
+
+  border-bottom-right-radius: 16.5rem;
+  top: 0;
+  left: 0;
+}
+
 
 #call {
   width: 20px;

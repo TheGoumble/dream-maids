@@ -12,10 +12,13 @@ import logo from "./../../images/logo.png"
 const Header = () => {
   return (
     <header>
+      <div id="sun"></div>
       <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand href="/">
-            <h1>Dream Maids</h1>
+            <h1>
+              Dream Maids
+            </h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />
 

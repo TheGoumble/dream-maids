@@ -4,15 +4,36 @@
   align-items: center;
 }
 
+#about > div {
+  z-index: 1;
+}
+
 .text {
-  background-color: #6ABDCD;
+  background-color: #6abdcda0;
   color: black;
   border-radius: 1.5rem;
   padding: 2rem;
 }
 
-#about-dream {
+.content {
+  display: flex;
+  padding: 0 2rem 0 2rem;
+}
+
+.title {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+.title > img {
+  width: 9rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

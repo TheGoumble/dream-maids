@@ -1,8 +1,12 @@
-.contact{
-
+.contact {
+  justify-content: center;
 }
 
-#text{
-    background-color: #D1662E;
-    border-radius: 2rem;
+.contact > div {
+  z-index: 1;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
 }

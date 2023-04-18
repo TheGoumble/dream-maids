@@ -38,7 +38,7 @@ const Home = () => {
       <Row className="outer" id="home">
         <Col id="contact">
           <img src={img_1} alt="people cleaning a room" id="contact_img" />
-          <h2>Weclome to Dream Maids</h2>
+          <h2>Contact Us</h2>
           <div>
             <h3>
               We take pride in our efficient and accessible all-day support to
@@ -47,40 +47,38 @@ const Home = () => {
             <div>
               <BookNow />
               <p className="h4">or</p>
-              <Button href="tel:+(561) 287-0358" variant="secondary">
+              <Button href="tel:+1 (561) 287-0358" variant="secondary">
                 Call Us
               </Button>
             </div>
           </div>
         </Col>
 
-
         <Col id="services" className="outer">
           <h2>Our Services</h2>
           <Row id="rowed">
             {data.map((item, index) => {
-              return <Card key={index} item={item}/>
+              return <Card key={index} item={item} />
             })}
           </Row>
         </Col>
 
-
         <Col className="outer" id="aboutus">
           <div>
-            <h2>Bringing peace into people’s homes for 15 years</h2>
             <div>
-              <p>
-                A journey into one woman’s dream to begin a business now a
-                business that strives to reach the homes and hearts of many.
-              </p>
-              <Button href="about-us" variant="secondary">
-                About Us
-              </Button>
+              <h2>Bringing peace into people’s homes for 15 years</h2>
+              <div>
+                <p>
+                  A journey into one woman’s dream to begin a business now a
+                  business that strives to reach the homes and hearts of many.
+                </p>
+                <Button href="about-us" variant="secondary">
+                  About Us
+                </Button>
+              </div>
             </div>
           </div>
         </Col>
-
-
       </Row>
     </Container>
   )

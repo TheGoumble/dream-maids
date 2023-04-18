@@ -15,7 +15,7 @@ function CustomToggle({ children, eventKey }) {
 
 const Card = ({ item }) => {
   return (
-    <Col className="service-cards" lg md>
+    <Col className="service-cards" lg >
       <h3>{item.heading}</h3>
       <img src={item.img} />
 

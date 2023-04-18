@@ -1,13 +1,23 @@
 import React from "react"
-import logo from "../../images/logo.png"
-import theGoumble from "../../images/TheGoumble.png"
-import "./footer.css"
 import BookNow from "../BookNow"
 import Animations from "./Animations"
+import theGoumble from "../../images/TheGoumble.png"
+import logo from "../../images/logo.png"
+import palmTree from "../../images/palm-tree.svg"
+import "./footer.css"
+import palmTreeMobile from "../../images/palm-tree-mobile.svg"
 
 const Footer = () => {
   return (
     <footer>
+      {/* Set up Islands with palm trees */}
+      <div id="island-group">
+        <img src={palmTree} id="left-tree" className="palm-tree" />
+        <img src={palmTree} className="palm-tree" />
+        <img src={palmTreeMobile} id="left-tree" className="palm-tree-mobile" />
+        <img src={palmTreeMobile} className="palm-tree-mobile" />
+      </div>
+
       <Animations />
       <section>
         <div className="container ">
@@ -15,7 +25,7 @@ const Footer = () => {
             {/* Column1 */}
 
             {/* fix footer alignment */}
-            <div className="col-md d-flex flex-column align-items-md-start align-items-sm-center">
+            <div id="footer-top" className="col-md">
               {/* <img id="img" src={logo} alt="Dream Maids Logo" /> */}
               <h4>Dream Maids</h4>
               <ul className="list-unstyled">
@@ -25,29 +35,32 @@ const Footer = () => {
               </ul>
             </div>
             {/* Column2 */}
-            <div className="col-sm d-flex flex-column align-items-xs-center">
-              <h5>Phone:</h5>
-              <ui className="list-unstyled">
-                <li>
-                  {" "}
-                  <a id="links" target="_blank" href="tel:+1 (561) 287-0358">
-                    (561) 287-0358
-                  </a>
-                </li>
-              </ui>
-              <h5>Location:</h5>
-              <ui className="list-unstyled">
-                <li> Palm Beach FL</li>
-              </ui>
+            <div id="second" className="col">
+              <div>
+                <h5>Phone:</h5>
+                <ui className="list-unstyled">
+                  <li>
+                    <a id="links" target="_blank" href="tel:+1 (561) 287-0358">
+                      (561) 287-0358
+                    </a>
+                  </li>
+                </ui>
+                <h5>Location:</h5>
+                <ui className="list-unstyled">
+                  <li> Palm Beach FL</li>
+                </ui>
+              </div>
             </div>
             {/* Column3 */}
-            <div className="col-sm">
-              <h4>Hours:</h4>
-              <ui className="list-unstyled">
-                <li>Monday - Friday,</li>
-                <li>9:00 am - 6:00 pm</li>
-                <li>Weekends by request</li>
-              </ui>
+            <div id="third" className="col">
+              <div>
+                <h4>Hours:</h4>
+                <ui className="list-unstyled">
+                  <li>Monday - Friday,</li>
+                  <li>9:00 am - 6:00 pm</li>
+                  <li>Weekends by request</li>
+                </ui>
+              </div>
             </div>
           </div>
           <hr />

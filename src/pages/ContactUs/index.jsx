@@ -18,7 +18,7 @@ const ContactUs = () => {
             <br />
             <p>Thank you for choosing us for your home cleaning service! </p>
           </Col>
-          <Col md={6} sm={12} p-5>
+          <Col md={6} sm={12} p-5 id="form">
             <h1>Contact form</h1>
             <Emailjs />
           </Col>
